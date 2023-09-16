@@ -15,7 +15,7 @@ terraform {
 
     backend "s3" {
         bucket = "devops-project-frankfurt"
-        key = "virginia/terraform/terraform.tfstate"
+        key = "terraform-initial-setup1/terraform.tfstate"
         region = "eu-central-1"
     }
 }
