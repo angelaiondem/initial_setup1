@@ -1,11 +1,11 @@
 output "vpc_id" {
     description = "VPC ID"
-    value = aws_vpc.project_vpc.id
+    value = aws_vpc.main_vpc.id
 }
 
 output "vpc_cidr_block" {
     description = "VPC CIDR Block"
-    value = aws_vpc.project_vpc.cidr_block
+    value = aws_vpc.main_vpc.cidr_block
 }
 
 output "instance_public_ip" {

@@ -6,26 +6,47 @@ variable "vpc_cidr" {
     default = "10.100.0.0/16"
 }
 
-variable "jenkins_server_public_cidr" {
-    default = "10.100.1.0/24"
+variable "public_subnet_cidrs" {
+    default = [
+        "10.100.1.0/24",
+        "10.100.2.0/24"
+    ]
+}
+
+variable "private_subnet_cidrs" {
+    default = [
+        "10.100.101.0/24",
+        "10.100.102.0/24"
+    ]
+}
+
+variable "database_subnet_cidrs" {
+    default = [
+        "10.100.201.0/24",
+        "10.100.202.0/24"
+    ]
+}
+
+variable "project_name" {
+    default = "Final Project"
+}
+
+variable "tags" {
+    default = {
+        Owner   = "Anzhela"
+        Project = "Terraform VPC Module"
+
+    }
+}
+
+variable "jenkins_key" {
+    default = "devops-project-jenkins-key"
 }
 
 variable "instance_type" {
     default = "t2.micro"
 }
 
-variable "ami_owners" {
-    default = "099720109477"
+variable "instance_ami" {
+    default = "ami-050460b6459bffaa9"  # Ubuntu20.04 with Jenkins Master Installed
 }
-
-variable "most_recent" {
-    default = true
-    type = bool
-}
-
-variable "ami_values" {
-    default = "ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"
-}
-
-
-
