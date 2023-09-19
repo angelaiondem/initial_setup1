@@ -8,8 +8,8 @@ After creating the infrastructure, the code outputs the following data:
 e.g.\
 Outputs:
 
-database_subnet_1_id = "subnet-0dcf55b9c0e2b1610"
-database_subnet_2_id = "subnet-09f13ca70399fc59e"
+database_subnet_1_id = "subnet-0dcf55b9c0e2b1610"\
+database_subnet_2_id = "subnet-09f13ca70399fc59e"\
 instance_private_ip = "10.100.1.252"\
 instance_public_ip = "3.120.210.127"\
 private_subnet_1_id = "subnet-0bce954dbdb0c32bf"\
