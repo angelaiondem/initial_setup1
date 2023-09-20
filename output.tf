@@ -1,11 +1,16 @@
-output "instance_public_ip" {
+output "jenkins_public_ip" {
   description = "Public IP address of the EC2 instance with Jenkins Master"
   value       = aws_instance.jenkins_instance.public_ip
 }
 
-output "instance_private_ip" {
+output "jenkins_private_ip" {
   description = "Public IP address of the EC2 instance with Jenkins Master"
   value       = aws_instance.jenkins_instance.private_ip
+}
+
+output "ansible_private_ip" {
+  description = "Public IP address of the EC2 instance with Jenkins Master"
+  value       = aws_instance.ansible_instance.private_ip
 }
 
 output "vpc_id" {
