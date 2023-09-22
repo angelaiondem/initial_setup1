@@ -34,7 +34,7 @@ variable "project_name" {
 
 variable "tags" {
     default = {
-        Owner   = "Anzhela"
+        Owner   = "Anzhela and Tamara"
         Project = "Terraform VPC Module"
 
     }
@@ -49,5 +49,5 @@ variable "instance_type" {
 }
 
 variable "instance_ami" {
-    default = "ami-050460b6459bffaa9"  # Ubuntu20.04 with Jenkins Master Installed
+    default = "ami-0d00cb6517ad29a53"  # Ubuntu20.04 with Jenkins Master Installed
 }
