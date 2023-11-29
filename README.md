@@ -1,4 +1,4 @@
-# initial_setup1
+# vpc_ec2s_jenkins_ansible
 ### Create a VPC and two EC2s
 This terraform code creates a VPC with 3 public subnets with an internet gateway, 2 private subnets with a NAT gateway, and two isolated (database) subnets.\
 Also creates one EC2 instance with the already installed Jenkins master in a public subnet and one EC2 with the already installed Ansible Master in a private subnet.
